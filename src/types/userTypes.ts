@@ -12,6 +12,13 @@ export interface UserState {
   error: string;
 }
 
+export interface FormValues {
+  username: string;
+  email: string;
+  password: string;
+  full_name?: string;
+}
+
 interface LOGIN_START {
   type: "LOGIN_START";
 }
